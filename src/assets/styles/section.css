@@ -1,0 +1,6 @@
+.section {
+    width: 100%;
+}
+.section:before, .section:after {
+    clear: both;
+}

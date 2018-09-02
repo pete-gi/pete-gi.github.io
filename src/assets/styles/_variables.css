@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #306ac1;
+    --color-primary-light: #5b9cff;
+    --color-secondary: #242e3d;
+    --color-secondary-light: #334156;
+
+    --color-gradient-1: #00d0f9;
+    --color-gradient-2: #0067c1;
+    --color-gradient-3: #c6dfff;
+    --color-gradient-4: #7fbdff;
+
+    --font-family: 'Rubik', sans-serif;
+    --font-size: 1.5rem;
+    --font-regular: 400;
+    --font-bold: 500;
+}
