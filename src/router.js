@@ -6,7 +6,7 @@ Vue.use(Router)
 
 export default new Router({
     linkExactActiveClass: 'is-active',
-    linkActiveClass: '',
+    linkActiveClass: 'is-parent-active',
     routes: [
         {
             path: '/',
@@ -19,11 +19,14 @@ export default new Router({
         }, {
             path: '/skills',
             name: 'skills',
-            component: () => import(/* webpackChunkName: "skills" */ './views/Skills.vue')
-        }, {
-            path: '/skills/:item',
-            name: 'skills-item',
-            component: () => import(/* webpackChunkName: "skills" */ './views/Skills-Item.vue')
+            component: () => import(/* webpackChunkName: "skills" */ './views/Skills.vue'),
+            children: [
+                {
+                    path: '/skills/:item',
+                    name: 'skills-item',
+                    component: () => import(/* webpackChunkName: "skills" */ './views/Skills-Item.vue')
+                }
+            ]
         }, {
             path: '/portfolio',
             name: 'portfolio',
