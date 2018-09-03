@@ -1,19 +1,15 @@
 <template>
     <main class="app-main">
-        Main About
-        <section class="section">
-            Section
+        <section class="section p-t p-b">
             <div class="container">
-                Container in section
+                <h2 class="page-title">
+                    Home
+                </h2>
             </div>
         </section>
-        <section class="section">
-            Section
+        <section class="section p-t p-b">
             <div class="container">
-                Container in section
-            </div>
-            <div class="container">
-                2nd container in section
+                <router-view></router-view>
             </div>
         </section>
     </main>

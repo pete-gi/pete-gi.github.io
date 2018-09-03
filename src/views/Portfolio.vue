@@ -1,8 +1,15 @@
 <template>
     <main class="app-main">
-        <section class="section">
+        <section class="section p-t p-b">
             <div class="container">
-                Container
+                <h2 class="page-title">
+                    Portfolio
+                </h2>
+            </div>
+        </section>
+        <section class="section p-t p-b">
+            <div class="container">
+                <router-view></router-view>
             </div>
         </section>
     </main>
