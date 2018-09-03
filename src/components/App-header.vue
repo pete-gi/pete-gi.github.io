@@ -1,7 +1,7 @@
 <template>
     <header class="app-header" @click.stop>
         <div class="container--full">
-            <h1 class="title">Piotr Golczyk</h1>
+            <h1 class="title"><!-- Piotr Golczyk -->Logo</h1>
             <button class="nav-toggle hamburger hamburger--collapse" type="button" :class="{'is-active': nav_on}" @click="nav_toggle">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
