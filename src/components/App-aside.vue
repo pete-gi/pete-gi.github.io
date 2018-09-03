@@ -2,7 +2,7 @@
     <aside class="app-aside">
         <card-home :class="{'is-active': route === 'home'}" />
         <card-about :class="{'is-active': route === 'about'}" />
-        <card-skills :class="{'is-active': route === 'skills'}" />
+        <card-skills :class="{'is-active': route === 'skills' || route === 'skills-item'}" />
     </aside>
 </template>
 
