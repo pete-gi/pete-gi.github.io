@@ -25,12 +25,12 @@
                     Portfolio
                 </a>
             </router-link>
-            <router-link class="nav-item" tag="li" to="/contact">
+            <!-- <router-link class="nav-item" tag="li" to="/contact">
                 <a>
                     <contact-icon />
                     Contact
                 </a>
-            </router-link>
+            </router-link> -->
         </ul>
     </nav>
 </template>

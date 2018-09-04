@@ -19,12 +19,10 @@
     position: relative;
 }
 .page-title:before {
-    content: '';
-    position: absolute;
-    left: 1.5rem;
-    top: 50%;
-    width: 0.5rem;
-    height: 50%;
-    transform: translateY(-50%);
-    background-color: var(--color-primary-light);
+    content: '<';
+    position: relative;
+    left: 5px;
+}
+.page-title:after {
+    content: ' />';
 }

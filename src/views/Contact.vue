@@ -9,7 +9,9 @@
         </section>
         <section class="section p-t p-b">
             <div class="container">
-                <router-view></router-view>
+                <div class="content-box">
+                    
+                </div>
             </div>
         </section>
     </main>
