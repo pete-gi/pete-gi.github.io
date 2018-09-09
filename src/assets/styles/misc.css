@@ -35,3 +35,8 @@ a.super:after {
 a.super:hover:after, a.super:focus:after {
     transform: scaleX(1);
 }
+
+.back-link {
+    width: 100%;
+    margin-left: 1.5rem;
+}
