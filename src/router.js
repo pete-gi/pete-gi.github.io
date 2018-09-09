@@ -32,9 +32,9 @@ export default new Router({
             name: 'portfolio',
             component: () => import(/* webpackChunkName: "portfolio" */ './views/Portfolio.vue')
         }, {
-            path: '/contact',
-            name: 'contact',
-            component: () => import(/* webpackChunkName: "contact" */ './views/Contact.vue')
+            path: '/experience',
+            name: 'experience',
+            component: () => import(/* webpackChunkName: "experience" */ './views/Experience.vue')
         }
     ]
 })

@@ -25,12 +25,12 @@
                     Portfolio
                 </a>
             </router-link>
-            <!-- <router-link class="nav-item" tag="li" to="/contact">
+            <router-link class="nav-item" tag="li" to="/experience">
                 <a>
-                    <contact-icon />
-                    Contact
+                    <experience-icon />
+                    Experience
                 </a>
-            </router-link> -->
+            </router-link>
         </ul>
     </nav>
 </template>
@@ -40,14 +40,14 @@ import homeIcon from './icons/home';
 import aboutIcon from './icons/about';
 import skillsIcon from './icons/skills';
 import portfolioIcon from './icons/portfolio';
-import contactIcon from './icons/contact';
+import experienceIcon from './icons/experience';
 export default {
     components: {
         homeIcon,
         aboutIcon,
         skillsIcon,
         portfolioIcon,
-        contactIcon
+        experienceIcon
     },
     computed: {
         nav_on() {
@@ -55,7 +55,7 @@ export default {
         }
     },
     mounted() {
-        console.log(homeIcon)
+        
     }
 };
 </script>

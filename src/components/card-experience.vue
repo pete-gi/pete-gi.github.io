@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-img">
-            <home-icon />
+            <experience-icon />
         </div>
         <div class="card-content p-t p-b">
             <div class="container">
@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import homeIcon from './icons/home';
+import experienceIcon from './icons/experience';
 export default {
     components: {
-        homeIcon
+        experienceIcon
     }
 };
 </script>
