@@ -46,7 +46,7 @@
     background-color: transparent;
     transition: background-color 0.3s;
 }
-.card-tile:hover, .card-tile:focus {
+.card-tile:hover, .card-tile:focus, .card-tile.is-active {
     background-color: var(--color-secondary-light);
 }
 .card-tile svg {
@@ -61,4 +61,51 @@
     opacity: 1;
     transform: translateX(0);
     transition: transform 0s, opacity 0.5s;
+}
+
+.card-bar {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+    background-color: transparent;
+    color: var(--color-secondary);
+    transition: all 0.5s, background-color 0.3s, color 0.3s;
+}
+.skill-item .card-bar.is-active {
+    height: 96px;
+    width: 100%;
+    opacity: 1;
+    padding: 1.5rem 1.5rem;
+    cursor: default;
+}
+.skill-item .card-bar {
+    height: 0;
+    opacity: 0;
+    padding: 0 1.5rem;
+}
+@media (min-width: 992px) {
+    .card-bar:not(.full) {
+        /* width: 50%; */
+    }
+}
+.card-bar svg {
+    width: 64px;
+    height: 64px;
+    margin-right: 2.5rem;
+}
+.card-bar svg path {
+    fill: var(--color-primary);
+    transition: fill 0.3s;
+}
+.card-bar.h:hover, .card-bar.h:focus {
+    color: #fff;
+    background-color: var(--color-primary-light);
+}
+.card-bar.h:hover svg path, .card-bar.h:focus svg path {
+    fill: #fff;
 }
