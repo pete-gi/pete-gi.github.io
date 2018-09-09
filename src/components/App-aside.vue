@@ -3,7 +3,8 @@
         <card-home :class="{'is-active': route === 'home'}" />
         <card-about :class="{'is-active': route === 'about'}" />
         <card-skills :class="{'is-active': route === 'skills' || route === 'skills-item'}" />
-        <card-contact :class="{'is-active': route === 'contact'}" />
+        <card-portfolio :class="{'is-active': route === 'portfolio' || route === 'portfolio-item'}" />
+        <card-experience :class="{'is-active': route === 'experience'}" />
     </aside>
 </template>
 
@@ -11,13 +12,15 @@
 import cardHome from './card-home';
 import cardAbout from './card-about';
 import cardSkills from './card-skills';
-import cardContact from './card-contact';
+import cardPortfolio from './card-portfolio';
+import cardExperience from './card-experience';
 export default {
     components: {
         cardHome,
         cardAbout,
         cardSkills,
-        cardContact
+        cardPortfolio,
+        cardExperience
     },
     computed: {
         route() {
