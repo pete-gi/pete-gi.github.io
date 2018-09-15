@@ -3,7 +3,7 @@
         <section class="section p-t p-b">
             <div class="container">
                 <h2 class="page-title">
-                    Home
+                    {{t[lang]['nav']['home']}}
                 </h2>
             </div>
         </section>
@@ -17,6 +17,13 @@
 
 <script>
 export default {
-    
+    computed: {
+        t() {
+            return this.$store.state.lang;
+        },
+        lang() {
+            return this.$store.state.settings.lang_active;
+        }
+    }
 };
 </script>

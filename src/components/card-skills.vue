@@ -4,11 +4,16 @@
             <skills-icon />
         </div>
         <div class="card-content card-content-flex" data-simplebar>
-            <router-link class="card-tile" v-for="(s, i) in skill_list" :key="i" :to="`/skills/${s.link}`" :title="s.title">
+            <div class="card-tile" v-for="(s, i) in skill_list" :key="i">
                 <svg viewBox="0 0 128 128">
                     <svg-icon :skill="s.title" />
                 </svg>
-            </router-link>
+            </div>
+            <!-- <router-link class="card-tile" v-for="(s, i) in skill_list" :key="i" :to="`/skills/${s.link}`">
+                <svg viewBox="0 0 128 128">
+                    <svg-icon :skill="s.title" />
+                </svg>
+            </router-link> -->
         </div>
     </div>
 </template>

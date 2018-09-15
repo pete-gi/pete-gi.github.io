@@ -4,31 +4,31 @@
             <router-link class="nav-item" tag="li" to="/">
                 <a>
                     <home-icon />
-                    Home
+                    {{t[lang]['nav']['home']}}
                 </a>
             </router-link>
             <router-link class="nav-item" tag="li" to="/about">
                 <a>
                     <about-icon />
-                    About
+                    {{t[lang]['nav']['about']}}
                 </a>
             </router-link>
             <router-link class="nav-item" tag="li" to="/skills">
                 <a>
                     <skills-icon />
-                    Skills
+                    {{t[lang]['nav']['skills']}}
                 </a>
             </router-link>
             <router-link class="nav-item" tag="li" to="/portfolio">
                 <a>
                     <portfolio-icon />
-                    Portfolio
+                    {{t[lang]['nav']['portfolio']}}
                 </a>
             </router-link>
             <router-link class="nav-item" tag="li" to="/experience">
                 <a>
                     <experience-icon />
-                    Experience
+                    {{t[lang]['nav']['experience']}}
                 </a>
             </router-link>
         </ul>
@@ -52,6 +52,12 @@ export default {
     computed: {
         nav_on() {
             return this.$store.state.settings.nav_on;
+        },
+        t() {
+            return this.$store.state.lang;
+        },
+        lang() {
+            return this.$store.state.settings.lang_active;
         }
     },
     mounted() {
@@ -94,6 +100,7 @@ export default {
         padding: 0.5rem 0.5rem;
         color: #fff;
         background-color: var(--color-primary);
+        font-size: 1.1rem;
         text-align: center;
         transition: background-color 0.2s;
         svg {

@@ -3,7 +3,7 @@
         <section class="section p-t p-b">
             <div class="container">
                 <h2 class="page-title">
-                    Skills
+                    {{t[lang]['nav']['skills']}}
                 </h2>
             </div>
         </section>
@@ -36,6 +36,12 @@ export default {
     computed: {
         skill_list() {
             return this.$store.state.skills.list;
+        },
+        t() {
+            return this.$store.state.lang;
+        },
+        lang() {
+            return this.$store.state.settings.lang_active;
         }
     }
 };
