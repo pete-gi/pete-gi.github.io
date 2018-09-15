@@ -8,6 +8,12 @@ const lang = {
                 portfolio: 'Portfolio',
                 experience: 'Doświadczenie',
             },
+            home: {
+                name: 'Imię i nazwisko',
+                birth: 'Data urodzenia',
+                place: 'Miejsce zamieszkania',
+                job: 'Zawód'
+            },
             about: [
                 'Cześć, jestem Piotr, web developer i wanna-be frontend developer.',
                 'Można powiedzieć, że wychowałem się na RWD, przez ponad 4 lata pracy nie zrobiłem ani jednej nieresponsywnej strony.',

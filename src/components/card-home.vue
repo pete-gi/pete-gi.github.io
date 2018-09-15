@@ -6,19 +6,19 @@
         <div class="card-content p-t p-b">
             <div class="container">
                 <p>
-                    <b>Imię i nazwisko</b>
+                    <b>{{t[lang]['home']['name']}}</b>
                     <br>Piotr Golczyk
                 </p>
                 <p>
-                    <b>Data urodzenia</b>
+                    <b>{{t[lang]['home']['birth']}}</b>
                     <br>1991/11/14
                 </p>
                 <p>
-                    <b>Miejsce zamieszkania</b>
+                    <b>{{t[lang]['home']['place']}}</b>
                     <br>Gdańsk
                 </p>
                 <p>
-                    <b>Zawód</b>
+                    <b>{{t[lang]['home']['job']}}</b>
                     <br>Web developer
                 </p>
             </div>
@@ -31,6 +31,14 @@ import homeIcon from './icons/home';
 export default {
     components: {
         homeIcon
+    },
+    computed: {
+        t() {
+            return this.$store.state.lang;
+        },
+        lang() {
+            return this.$store.state.settings.lang_active;
+        }
     }
 };
 </script>
