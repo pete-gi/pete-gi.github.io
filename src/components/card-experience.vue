@@ -6,16 +6,16 @@
         <div class="card-content p-t p-b">
             <div class="container">
                 <p>
-                    <b>E-mail:</b>
-                    <br><a href="mailto:petegi@outlook.com">petegi@outlook.com</a>
+                    <b>{{t[lang]['experience']['over4years'][0]}}</b>
+                    <br>{{t[lang]['experience']['over4years'][1]}}
                 </p>
                 <p>
-                    <b>LinkedIn:</b>
-                    <br><a href="https://linkedin.com/in/piotr-g-a9a990133" target="_blank">/in/piotr-g-a9a990133</a>
+                    <b>{{t[lang]['experience']['over800websites'][0]}}</b>
+                    <br>{{t[lang]['experience']['over800websites'][1]}}
                 </p>
                 <p>
-                    <b>Twitter</b>
-                    <br><a href="https://twitter.com/pete_gi" target="_blank">@pete_gi</a>
+                    <b>{{t[lang]['experience']['oneDev'][0]}}</b>
+                    <br>{{t[lang]['experience']['oneDev'][1]}}
                 </p>
             </div>
         </div>
@@ -27,6 +27,14 @@ import experienceIcon from './icons/experience';
 export default {
     components: {
         experienceIcon
+    },
+    computed: {
+        t() {
+            return this.$store.state.lang;
+        },
+        lang() {
+            return this.$store.state.settings.lang_active;
+        }
     }
 };
 </script>
