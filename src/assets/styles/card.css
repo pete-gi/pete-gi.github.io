@@ -90,7 +90,7 @@
 }
 @media (min-width: 992px) {
     .card-bar:not(.full) {
-        /* width: 50%; */
+        width: 50%;
     }
 }
 .card-bar svg {
