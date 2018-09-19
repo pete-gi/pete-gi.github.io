@@ -14,9 +14,6 @@
                     <div class="home-img" v-for="(img, i) in imgs" :key="i">
                         <img :src="getImgPath(img)" :style="`animation-delay: ${i*3}s`" alt="">
                     </div>
-                    <div class="home-img" v-for="(img, i) in imgs" :key="'i'+i">
-                        <img :src="getImgPath(img)" :style="`animation-delay: ${(i*3)+6}s`" alt="">
-                    </div>
                 </div>
             </div>
         </section>

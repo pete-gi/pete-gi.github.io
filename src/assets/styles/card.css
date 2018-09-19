@@ -1,8 +1,8 @@
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
     position: absolute;
     left: 0;
     top: 0;
@@ -12,7 +12,7 @@
     transition: transform 0.5s, opacity 0.5s;
 }
 .card-img {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -29,7 +29,7 @@
     max-height: calc(100vh - 192px - 64px);
 }
 .card-content-flex {
-    display: flex;;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -108,4 +108,22 @@
 }
 .card-bar.h:hover svg path, .card-bar.h:focus svg path {
     fill: #fff;
+}
+
+.route-skills .card {
+    display: none;
+}
+
+@media (min-width: 920px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-img {
+        display: flex;
+    }
+    
+    .route-skills .card {
+        display: flex;
+    }
 }

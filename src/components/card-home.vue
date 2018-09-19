@@ -15,11 +15,18 @@
                 </p>
                 <p>
                     <b>{{t[lang]['home']['place']}}</b>
-                    <br>Gdańsk
+                    <br>Gdansk
                 </p>
                 <p>
                     <b>{{t[lang]['home']['job']}}</b>
                     <br>Web developer
+                </p>
+                <p>
+                    <b>
+                        <a class="super" :href="`/pdf/${lang === 'pl' ? 'CV-2018-PL' : 'Resume-EN-2018'}.pdf`" target="_blank">
+                            {{t[lang]['home']['cv']}}!
+                        </a>
+                    </b>
                 </p>
             </div>
         </div>

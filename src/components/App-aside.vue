@@ -32,12 +32,16 @@ export default {
 
 <style lang="scss">
 .app-aside {
-    grid-column: 2/3;
-    grid-row: 2/3;
+    grid-column: 1/2;
+    grid-row: 3/4;
     background-color: var(--color-secondary);
     color: #fff;
     position: relative;
     z-index: 0;
     max-height: calc(100vh - 64px);
+    @media (min-width: 920px) {
+        grid-column: 2/3;
+        grid-row: 2/6;
+    }
 }
 </style>

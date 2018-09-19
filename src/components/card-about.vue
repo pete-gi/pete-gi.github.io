@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <div class="card-img">
-            <img src="@/assets/img/piotrgolczyk.jpg" alt="">
+            <img src="/img/piotrgolczyk.jpg" alt="">
             <!-- <about-icon /> -->
         </div>
         <div class="card-content p-t p-b">

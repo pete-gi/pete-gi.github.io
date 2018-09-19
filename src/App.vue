@@ -1,11 +1,16 @@
 <template>
-    <div id="app" class="app" @click="nav_toggle">
+    <div id="app" class="app" :class="routeClass">
         <App-header></App-header>
         <App-nav></App-nav>
         <App-aside></App-aside>
         <transition name="fade">
             <router-view/>
         </transition>
+        <footer class="app-footer">
+            <p>
+                Copyright &copy; 2018 by Piotr Golczyk.
+            </p>
+        </footer>
     </div>
 </template>
 
@@ -19,9 +24,9 @@ export default {
         AppAside,
         AppHeader
     },
-    methods: {
-        nav_toggle() {
-            this.$store.commit('settings/nav_toggle', false);
+    computed: {
+        routeClass() {
+            return `route-${this.$route.name}`;
         }
     }
 };
@@ -30,9 +35,16 @@ export default {
 <style lang="scss">
 .app {
     display: grid;
-    grid-template-columns: 80px 256px 1fr;
-    grid-template-rows: 64px 1fr;
-    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px 80px 256px 1fr auto;
     overflow: hidden;
+    @media (min-width: 920px) {
+        grid-template-columns: 80px 256px 1fr;
+        grid-template-rows: 64px 1fr auto;
+        height: 100vh;
+    }
+    &.route-skills {
+        grid-template-rows: 64px 80px 0px 1fr auto;
+    }
 }
 </style>
