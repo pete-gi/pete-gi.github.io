@@ -18,6 +18,14 @@
                     <b>Twitter</b>
                     <br><a class="super" href="https://twitter.com/pete_gi" target="_blank">@pete_gi</a>
                 </p>
+                <p>
+                    <b>GitHub</b>
+                    <br><a class="super" href="https://github.com/pete-gi" target="_blank">pete-gi</a>
+                </p>
+                <p>
+                    <b>NPM</b>
+                    <br><a class="super" href="https://www.npmjs.com/~pete-gi" target="_blank">~pete-gi</a>
+                </p>
             </div>
         </div>
     </div>
