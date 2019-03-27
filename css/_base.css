@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body,
+figure {
+    margin: 0;
+}
+
+.site {
+    font-size: 1.7rem;
+}
