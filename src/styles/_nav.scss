@@ -1,0 +1,22 @@
+.n {
+    display: flex;
+    flex-direction: column;
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    &__m {
+        list-style: none;
+        margin: auto 0;
+        padding: 0;
+    }
+    &__i {
+
+    }
+    &__l {
+        display: block;
+        text-decoration: none;
+        color: var(--text);
+    }
+}

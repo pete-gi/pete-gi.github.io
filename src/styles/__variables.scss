@@ -1,0 +1,14 @@
+:root {
+    --primary: #507DBC;
+    // --primary: #634B66;
+    --secondary: #DAE3E5;
+    --text: #3D3D3D;
+
+    --size: 3.14rem;
+    --size-2x: calc(var(--size) * 2);
+    --size-3x: calc(var(--size) * 3);
+    --font-family: 'Bai Jamjuree';
+    --font-size: 3.14rem;
+    --font-light: 300;
+    --font-bold: 600;
+}

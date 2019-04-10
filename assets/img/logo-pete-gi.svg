@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192" height="96" viewBox="0 0 192 96">
+  <defs>
+    <clipPath id="clip-custom_1">
+      <rect width="192" height="96"/>
+    </clipPath>
+  </defs>
+  <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
+    <rect width="192" height="96" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(96)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="96" height="96" fill="#473a7b"/>
+      <text id="gi" transform="translate(48 59)" fill="#fff" font-size="32" font-family="Comfortaa-Regular, Comfortaa"><tspan x="-15.456" y="0">gi</tspan></text>
+    </g>
+    <g id="Group_2" data-name="Group 2">
+      <g id="Rectangle_2" data-name="Rectangle 2" fill="#fff" stroke="#473a7b" stroke-width="1">
+        <rect width="96" height="96" stroke="none"/>
+        <rect x="0.5" y="0.5" width="95" height="95" fill="none"/>
+      </g>
+      <text id="pete" transform="translate(48 58)" fill="#473a7b" font-size="31" font-family="Comfortaa-Regular, Comfortaa"><tspan x="-36.224" y="0">pete</tspan></text>
+    </g>
+  </g>
+</svg>
