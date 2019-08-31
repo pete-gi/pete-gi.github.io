@@ -4,69 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>, web developer, css developer, front-end developer</title>
+    <title>Piotr Golczyk - web developer, css developer, front-end engineer, vuejs developer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:300,600&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script defer src="assets/js/index.js"></script>
+    <link rel="prefetch" href="/pages/o-mnie.html">
+    <link rel="prefetch" href="/pages/portfolio.html">
+    <link rel="prefetch" href="/pages/doswiadczenie.html">
+    <link rel="prefetch" href="/pages/kontakt.html">
+    <script defer src="assets/js/index.js" type="module"></script>
 </head>
 <body>
     <div id="site" class="site">
+        <div id="nav-overlay" class="n__overlay"></div>
         <div class="container">
             <nav id="nav" class="n">
-                <a href="/" class="n__logo">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="188.4" height="94.2"
-                        viewBox="0 0 188.4 94.2">
+                <a href="#o-mnie" class="n__logo js-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="192" height="96"
+                        viewBox="0 0 192 96">
                         <defs>
                             <clipPath id="clip-custom_1">
-                                <rect width="188.4" height="94.2" />
+                                <rect width="192" height="96" />
                             </clipPath>
                         </defs>
                         <g id="custom_1" data-name="custom – 1" clip-path="url(#clip-custom_1)">
-                            <rect width="188.4" height="94.2" style="fill: white" />
-                            <g id="Group_1" data-name="Group 1" transform="translate(94.2)">
-                                <rect id="Rectangle_1" data-name="Rectangle 1" width="94.2" height="94.2" style="fill: var(--primary)" />
+                            <rect width="192" height="96" style="fill: white" />
+                            <g id="Group_1" data-name="Group 1" transform="translate(96)">
+                                <rect id="Rectangle_1" data-name="Rectangle 1" width="96" height="96" style="fill: var(--primary)" />
                                 <text id="gi" transform="translate(48 59)" style="fill: white" font-size="32"
-                                    font-family="Comfortaa-Regular, Comfortaa">
+                                    font-family="Bai+Jamjuree">
                                     <tspan x="-15.456" y="0">gi</tspan>
                                 </text>
                             </g>
                             <g id="Group_2" data-name="Group 2">
                                 <g id="Rectangle_2" data-name="Rectangle 2" style="fill: white" style="stroke: var(--primary)"
                                     stroke-width="1">
-                                    <rect width="94.2" height="94.2" stroke="none" />
+                                    <rect width="96" height="96" stroke="none" />
                                     <rect x="0.5" y="0.5" width="94.1" height="94.1" fill="none" />
                                 </g>
                                 <text id="pete" transform="translate(48 58)" style="fill: var(--primary)" font-size="31"
-                                    font-family="Comfortaa-Regular, Comfortaa">
-                                    <tspan x="-36.224" y="0">pete</tspan>
+                                    font-family="Bai+Jamjuree">
+                                    <tspan x="-32" y="0">pete</tspan>
                                 </text>
                             </g>
                         </g>
                     </svg>
                 </a>
-                <ul id="nav-menu" class="n__m">
-                    <li class="n__i">
-                        <a class="n__l" href="#">O mnie</a>
+                <button id="nav-toggle" class="n__toggle">
+                    <span class="n__toggle-bar"></span>
+                    <span class="n__toggle-bar"></span>
+                    <span class="n__toggle-bar"></span>
+                </button>
+                <ul id="nav-menu" class="n__menu">
+                    <li class="n__item">
+                        <a class="n__link js-link" href="#o-mnie">O mnie</a>
                     </li>
-                    <li class="n__i">
-                        <a class="n__l" href="#">Portfolio</a>
+                    <li class="n__item">
+                        <a class="n__link js-link" href="#portfolio">Portfolio</a>
                     </li>
-                    <li class="n__i">
-                        <a class="n__l" href="#">Blog</a>
+                    <li class="n__item">
+                        <a class="n__link js-link" href="#doswiadczenie">Doświadczenie</a>
                     </li>
-                    <li class="n__i">
-                        <a class="n__l" href="#">Kontakt</a>
+                    <li class="n__item">
+                        <a class="n__link js-link" href="#kontakt">Kontakt</a>
                     </li>
                 </ul>
             </nav>
     
             <main id="main" class="m">
-                
+                <div id="content" class="c"></div>
             </main>
     
             <footer id="footer" class="f">
-    
+                <p>
+                    Copyright &copy; 2019 by Piotr Golczyk.
+                </p>
             </footer>
         </div>
     </div>
